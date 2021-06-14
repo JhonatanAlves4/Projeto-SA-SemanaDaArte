@@ -24,10 +24,8 @@ public class VisitanteController {
 		return visitanteService.findAll();
 	}
 	
-    @PostMapping(value = "/", produces = "application/json")
-    public Visitante newVisitante(@RequestBody String day){
-    	Visitante visitante = new Visitante();
-    	visitante.setDay(day);
+    @PostMapping(value = "/save", produces = "application/json")
+    public Visitante newVisitante(@RequestBody Visitante visitante){
         return visitanteService.save(visitante);
     }
 }
