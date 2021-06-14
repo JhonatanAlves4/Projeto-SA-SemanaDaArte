@@ -25,7 +25,7 @@ public class VisitanteController {
 	}
 	
     @PostMapping(value = "/", produces = "application/json")
-    public Visitante newVisitante(@RequestBody int day){
+    public Visitante newVisitante(@RequestBody String day){
     	Visitante visitante = new Visitante();
     	visitante.setDay(day);
         return visitanteService.save(visitante);
