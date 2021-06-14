@@ -12,13 +12,13 @@ import com.semanaArte.repository.VisitanteRepository;
 public class VisitanteServiceImpl implements VisitanteService {
 
 	
-	 @Autowired
-	 VisitanteRepository visitanteRepository;
+	@Autowired
+	VisitanteRepository visitanteRepository;
 	 
 	@Override
     public List<Visitante> findAll() {
         return visitanteRepository.findAll();
-}
+	}
 
     @Override
     public Visitante save(Visitante visitante) {
