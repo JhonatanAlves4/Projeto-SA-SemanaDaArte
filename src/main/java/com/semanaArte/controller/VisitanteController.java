@@ -24,7 +24,7 @@ public class VisitanteController {
 		return visitanteService.findAll();
 	}
 	
-    @PostMapping(value = "/save", produces = "application/json")
+    @PostMapping(value = "/save", consumes = "application/json")
     public Visitante newVisitante(@RequestBody Visitante visitante){
         return visitanteService.save(visitante);
     }
