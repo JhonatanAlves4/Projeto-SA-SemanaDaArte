@@ -1,0 +1,27 @@
+package com.semanaArte.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+
+import com.semanaArte.model.Visitante;
+import com.semanaArte.service.VisitanteService;
+
+public class VisitanteController {
+	
+    @Autowired
+    VisitanteService visitanteService;
+    
+	@GetMapping(value = "/", produces = "application/json")
+	public List<Visitante> findAll() {
+		return visitanteService.findAll();
+	}
+	
+    @PostMapping(value = "/", produces = "application/json")
+    public Visitante newVisitante(@RequestBody Visitante visitante){
+        return visitanteService.save(visitante);
+    }
+}
