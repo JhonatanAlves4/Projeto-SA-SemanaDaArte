@@ -1,7 +1,5 @@
 package com.semanaArte.model;
 
-import java.sql.Date;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -15,7 +13,7 @@ public class Visitante {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	private Date day;
+	private int day;
 	
 	//Getters and setters
 	public Long getId() {
@@ -26,11 +24,11 @@ public class Visitante {
 		this.id = id;
 	}
 
-	public Date getDay() {
+	public int getDay() {
 		return day;
 	}
 
-	public void setDay(Date day) {
+	public void setDay(int day) {
 		this.day = day;
 	}
 	
@@ -38,7 +36,7 @@ public class Visitante {
 	@Override
 	public String toString() {
         return "Id: " + id + "\n"
-        		+ "Date: " + day;
+        		+ "int: " + day;
     }	
 	
 
