@@ -26,7 +26,6 @@ public class VisitanteController {
 	
     @PostMapping(value = "/save", produces = "application/json")
     public Visitante newVisitante(@RequestBody Visitante visitante){
-    	System.out.println(visitante);
         return visitanteService.save(visitante);
     }
 }
