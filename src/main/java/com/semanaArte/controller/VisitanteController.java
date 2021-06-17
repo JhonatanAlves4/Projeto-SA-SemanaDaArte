@@ -13,7 +13,7 @@ import com.semanaArte.model.Visitante;
 import com.semanaArte.service.VisitanteServiceImpl;
 
 @RestController
-@RequestMapping("/visitante")
+@RequestMapping("/visitantes")
 public class VisitanteController {
 	
     @Autowired
