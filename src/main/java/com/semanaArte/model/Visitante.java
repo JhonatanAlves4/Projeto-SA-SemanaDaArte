@@ -39,5 +39,4 @@ public class Visitante {
         		+ "String: " + day;
     }	
 	
-
 }
