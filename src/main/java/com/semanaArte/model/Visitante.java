@@ -14,7 +14,7 @@ public class Visitante {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	private String day;
+	private int day;
 	
 	
 	//Getters and setters
@@ -26,11 +26,11 @@ public class Visitante {
 		this.id = id;
 	}
 
-	public String getDay() {
+	public int getDay() {
 		return day;
 	}
 
-	public void setDay(String day) {
+	public void setDay(int day) {
 		this.day = day;
 	}
 	
@@ -38,7 +38,7 @@ public class Visitante {
 	@Override
 	public String toString() {
         return "Id: " + id + "\n"
-        		+ "String" + day;
+        		+ "Int: " + day;
     }	
 	
 }
