@@ -10,14 +10,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.semanaArte.model.Visitante;
-import com.semanaArte.service.VisitanteService;
+import com.semanaArte.service.VisitanteServiceImpl;
 
 @RestController
 @RequestMapping("/visitante")
 public class VisitanteController {
 	
     @Autowired
-    VisitanteService visitanteService;
+    VisitanteServiceImpl visitanteService;
     
 	@GetMapping(value = "/", produces = "application/json")
 	public List<Visitante> findAll() {
