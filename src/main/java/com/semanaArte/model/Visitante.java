@@ -1,6 +1,5 @@
 package com.semanaArte.model;
 
-import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -17,7 +16,6 @@ public class Visitante {
 	
 	private String day;
 	
-	public List<Visitante> visitantes;
 	
 	//Getters and setters
 	public Long getId() {
