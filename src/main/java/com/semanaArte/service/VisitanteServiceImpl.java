@@ -22,4 +22,9 @@ public class VisitanteServiceImpl implements VisitanteService {
     public Visitante save(Visitante visitante) {
         return visitanteRepository.save(visitante);
     }
+
+    @Override
+    public void deleteById(Long id) {
+        visitanteRepository.deleteById(id);
+    }
 }
