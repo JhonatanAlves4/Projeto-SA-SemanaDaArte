@@ -10,7 +10,7 @@ import com.semanaArte.service.VisitanteServiceImpl;
 
 @RestController
 @RequestMapping("/visitante")
-@CrossOrigin(origins = "https://sa-semana-da-arte.vercel.app")
+@CrossOrigin(origins = "http://sa-semana-da-arte.vercel.app", maxAge = 3600)
 public class VisitanteController {
 	
     @Autowired
