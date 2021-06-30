@@ -10,7 +10,7 @@ import com.semanaArte.service.VisitanteServiceImpl;
 
 @RestController
 @RequestMapping("/api/")
-@CrossOrigin(origins = "*", allowedHeaders = "*", maxAge = 3600)
+@CrossOrigin(origins = "http://localhost:3000/pop-art", allowedHeaders = "*", maxAge = 3600)
 //"https://sa-arte.vercel.app"
 public class VisitanteController {
 	
