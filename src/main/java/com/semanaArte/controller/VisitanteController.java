@@ -18,19 +18,11 @@ public class VisitanteController {
 	
     @Autowired
     VisitanteServiceImpl visitanteService;
-
-    /*@RequestMapping(value= "api/", method=RequestMethod.OPTIONS)
-    public void corsHeaders(HttpServletResponse response) {
-        response.addHeader("Access-Control-Allow-Origin", "http://localhost:3000");
-        response.addHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
-        response.addHeader("Access-Control-Allow-Headers", "origin, content-type, accept, x-requested-with");
-        response.addHeader("Access-Control-Max-Age", "3600");
-    }*/
     
-	@GetMapping(value = "/", produces = "application/json")
-	public List<Visitante> findAll() {
-		return visitanteService.findAll();
-	}
+@GetMapping(value = "/", produces = "application/json")
+public List<Visitante> findAll() {
+return visitanteService.findAll();
+}
 	
     @PostMapping(value = "/", produces = "application/json")
     public Visitante newVisitante(@RequestBody Visitante visitante){
