@@ -19,6 +19,7 @@ public class Visitante {
 	@NotNull
 	private String day;
 
+
 	//Getters and setters
 	public Long getId() {
 		return id;
