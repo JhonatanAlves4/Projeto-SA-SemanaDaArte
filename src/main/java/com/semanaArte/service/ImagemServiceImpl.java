@@ -16,4 +16,7 @@ public class ImagemServiceImpl implements ImagemService {
     public List<Imagem> findAll() {
         return imagemRepository.findAll();
     }
+
+    @Override
+    public  Imagem save(Imagem imagem) {return imagemRepository.save(imagem);}
 }
