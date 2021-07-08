@@ -7,4 +7,5 @@ import java.util.List;
 public interface ImagemService {
     public List<Imagem> findAll();
     public Imagem save(Imagem imagem);
+    public void deleteById(Long id);
 }

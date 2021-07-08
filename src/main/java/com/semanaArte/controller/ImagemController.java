@@ -28,8 +28,8 @@ public class ImagemController {
         return imagemService.save(imagem);
     }
 
-    /*@DeleteMapping(value = "/{id}", produces = "application/json")
+    @DeleteMapping(value = "/{id}", produces = "application/json")
     public void delete(@PathVariable Long id){
-        visitanteService.deleteById(id);
-    }*/
+        imagemService.deleteById(id);
+    }
 }

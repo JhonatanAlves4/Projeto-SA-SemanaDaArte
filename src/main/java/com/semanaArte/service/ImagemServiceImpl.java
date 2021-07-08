@@ -18,5 +18,8 @@ public class ImagemServiceImpl implements ImagemService {
     }
 
     @Override
-    public  Imagem save(Imagem imagem) {return imagemRepository.save(imagem);}
+    public Imagem save(Imagem imagem) {return imagemRepository.save(imagem);}
+
+    @Override
+    public void deleteById(Long id) {imagemRepository.deleteById(id);}
 }
