@@ -9,7 +9,6 @@ import javax.validation.constraints.Size;
 
 @Entity(name = "visitante")
 public class Visitante {
-	
 	//Attributes
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

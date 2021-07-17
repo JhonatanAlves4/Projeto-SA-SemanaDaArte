@@ -2,16 +2,16 @@ package com.semanaArte.service;
 
 import java.util.List;
 
+import com.semanaArte.repository.VisitanteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.semanaArte.model.Visitante;
-import com.semanaArte.repository.VisitanteRepository;
 
 @Service
 public class VisitanteServiceImpl implements VisitanteService {
 	@Autowired
-	VisitanteRepository visitanteRepository;
+    VisitanteRepository visitanteRepository;
 	 
 	@Override
     public List<Visitante> findAll() {

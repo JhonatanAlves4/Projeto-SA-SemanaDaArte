@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 public class VisitanteController {
 	
     @Autowired
-    VisitanteServiceImpl visitanteService;
+     VisitanteServiceImpl visitanteService;
 
     /*@RequestMapping(value= "api/", method=RequestMethod.OPTIONS)
     public void corsHeaders(HttpServletResponse response) {

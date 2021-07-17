@@ -1,5 +1,7 @@
 package com.semanaArte.service;
 
+//import com.semanaArte.model.Imagem;
+
 import com.semanaArte.model.Imagem;
 
 import java.util.List;
