@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 
 @RestController
 @RequestMapping("api/")
-@CrossOrigin(origins = "https://sa-semana-da-arte-2021.vercel.app", allowedHeaders = "*", maxAge = 3600)
+@CrossOrigin(origins = "https://sa-2021.vercel.app", allowedHeaders = "*", maxAge = 3600)
 
 public class VisitanteController {
 	

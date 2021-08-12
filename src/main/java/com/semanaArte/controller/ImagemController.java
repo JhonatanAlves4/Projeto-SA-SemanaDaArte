@@ -9,7 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("imagem/")
-@CrossOrigin(origins = "*", allowedHeaders = "*", maxAge = 3600)
+@CrossOrigin(origins = "https://sa-2021.vercel.app", allowedHeaders = "*", maxAge = 3600)
 
 public class ImagemController {
     @Autowired
